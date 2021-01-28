@@ -93,15 +93,15 @@ Complete the [App Academy Open](https://open.appacademy.io/) free online Fullsta
 | Courses                                                                                                                                                               |   Status   |   Evidence   |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------: | :----------: |
 | Welcome To Coding                                                                                                                                                     |Done        |              |
-| Full Stack Online - Intro to Programming                                                                                                                              |In progress |              |
-| Full Stack Online - Software Engineering Foundations                                                                                                                  |            |              |
+| Full Stack Online - Intro to Programming                                                                                                                              |Done        |              |
+| Full Stack Online - Software Engineering Foundations                                                                                                                  |In Progress |              |
 | Full Stack Online - Ruby                                                                                                                                              |            |              |
 | Full Stack Online - SQL                                                                                                                                               |            |              |
 | Full Stack Online - Rails                                                                                                                                             |            |              |
 | Full Stack Online - JavaScript                                                                                                                                        |            |              |
 | Full Stack Online - React                                                                                                                                             |            |              |
 | Full Stack Online - Full Stack Project                                                                                                                                |            |              |
-| Full Stack Online - MERN Stack Curriculum                                                                                                                            |            |              |
+| Full Stack Online - MERN Stack Curriculum                                                                                                                             |            |              |
 | Full Stack Online - Job Search                                                                                                                                        |            |              |
 | Full Stack Online - Docker                                                                                                                                            |            |              |
 | Full Stack Online - GraphQL                                                                                                                                           |            |              |
