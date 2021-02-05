@@ -13,3 +13,10 @@ def hipsterfy(word)
   end
   hipsterfied.reverse
 end
+
+def vowel_counts(str)
+  counts = Hash.new(0)
+  vowels = "aeiouAEIOU"
+  str.each_char { |char| counts[char.downcase] += 1 if vowels.include?(char) }
+  counts
+end
