@@ -35,3 +35,13 @@ def censor(sentence, curses)
   end
   censored.join(" ")
 end
+
+def power_of_two?(n)
+  return false if n < 1
+  powers = 1
+  while powers <= n
+    return true if powers == n
+    powers *= 2
+  end
+  false
+end
