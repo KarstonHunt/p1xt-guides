@@ -20,3 +20,20 @@ def vowel_counts(str)
   str.each_char { |char| counts[char.downcase] += 1 if vowels.include?(char) }
   counts
 end
+
+def caesar_cipher(message, n)
+  alphabet = ("a".."z").to_a
+  new_message = ""
+
+  message.each_char do |char|
+    if alphabet.include?(char)
+      old_ind = alphabet.index(char)
+      new_ind = old_ind + n
+      new_message += alphabet[new_ind % 26]
+    else
+      new_message += char
+    end
+  end
+
+  new_message
+end
