@@ -17,3 +17,8 @@ def substrings(str)
   end
   substrings
 end
+
+def palindrome_substrings(str)
+  substrs = substrings(str)
+  substrs.select { |s| s if s.length > 1 && palindrome?(s) }
+end
