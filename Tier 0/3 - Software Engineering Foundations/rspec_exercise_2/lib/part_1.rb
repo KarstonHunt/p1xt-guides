@@ -15,3 +15,23 @@ def merge(hash1, hash2)
   merged = {**hash1, **hash2}
   merged
 end
+
+def censor(sentence, curses)
+  vowels = "aeiouAEIOU"
+  words = sentence.split
+  censored = words.map do |word|
+    if curses.include?(word.downcase)
+      new_word = word.chars.map do |char|
+        if vowels.include?(char)
+          "*"
+        else
+          char
+        end
+      end
+      new_word.join("")
+    else
+      word
+    end
+  end
+  censored.join(" ")
+end
