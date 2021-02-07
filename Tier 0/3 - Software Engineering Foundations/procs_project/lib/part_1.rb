@@ -22,3 +22,8 @@ def my_any?(arr, &prc)
   arr.each { |el| return true if prc.call(el) }
   false
 end
+
+def my_all?(arr, &prc)
+  arr.each { |el| return false if !prc.call(el) }
+  true
+end
