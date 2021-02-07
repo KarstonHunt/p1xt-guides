@@ -27,3 +27,8 @@ def my_all?(arr, &prc)
   arr.each { |el| return false if !prc.call(el) }
   true
 end
+
+def my_none?(arr, &prc)
+  arr.each { |el| return false if prc.call(el) }
+  true
+end
