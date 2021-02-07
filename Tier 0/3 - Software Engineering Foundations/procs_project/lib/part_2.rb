@@ -5,5 +5,6 @@ end
 
 def word_changer(sentence, &prc)
   words = sentence.split(" ")
-  new_words = words.map { |word|  }
+  new_words = words.map { |word| prc.call(word) }
+  new_words.join(" ")
 end
