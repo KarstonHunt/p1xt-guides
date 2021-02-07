@@ -6,7 +6,11 @@ end
 
 def no_valid_url?(urls)
   tlds = ["com", "net", "io", "org"]
-  urls.none? do |url|
-    tlds.include?(url.split(".")[1])
+  urls.none? { |url| tlds.include?(url.split(".")[1]) }
+end
+
+def any_passing_students?(students)
+  students.any? do |student|
+    student[:grades].sum / student[:grades].length.to_f >= 75.0
   end
 end
