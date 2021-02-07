@@ -21,3 +21,7 @@ def aba_translate(word)
   end
   translated
 end
+
+def aba_array(words)
+  words.map { |word| aba_translate(word) }
+end
