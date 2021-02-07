@@ -1,12 +1,12 @@
 def all_words_capitalized?(words)
-  words.all? do |word|
-    word == word[0].upcase + word[1..-1].downcase
-  end
+  words.all? { |word| word == word.capitalize }
 end
 
 def no_valid_url?(urls)
   tlds = ["com", "net", "io", "org"]
-  urls.none? { |url| tlds.include?(url.split(".")[1]) }
+  urls.none? do |url|
+    tlds.any? { |tld| url.end_with?(tld) }
+  end
 end
 
 def any_passing_students?(students)
