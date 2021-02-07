@@ -5,3 +5,7 @@ end
 def reject_puppies(dogs)
   dogs.reject { |dog| dog["age"] <= 2 }
 end
+
+def count_positive_subarrays(array)
+  array.count { |subarr| subarr.sum > 0 }
+end
