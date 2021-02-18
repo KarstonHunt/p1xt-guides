@@ -48,9 +48,7 @@ class Hangman
     indices = self.get_matching_indices(char)
     self.fill_indices(char, indices)
     @attempted_chars << char
-    if indices.empty?
-      @remaining_incorrect_guesses -= 1
-    end
+    @remaining_incorrect_guesses -= 1 if indices.empty?
     return true
   end
 
