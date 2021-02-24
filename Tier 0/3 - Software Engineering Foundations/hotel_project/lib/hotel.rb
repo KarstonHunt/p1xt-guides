@@ -10,9 +10,7 @@ class Hotel
   end
 
   def name
-    n = @name.split
-    names = n.map { |word| word.capitalize }
-    names.join(" ")
+    @name.split(" ").map(&:capitalize).join(" ")
   end
 
   def rooms
@@ -36,17 +34,12 @@ class Hotel
   end
 
   def has_vacancy?
-    @rooms.keys.each do |key|
-      if !@rooms[key].full?
-        return true
-      end
-    end
-    false
+    @rooms.values.any? { |room| room.available_space > 0 }
   end
 
   def list_rooms
     @rooms.keys.each do |key|
-      puts key + @rooms[key].available_space.to_s
+      puts "#{key} #{@rooms[key].available_space}"
     end
   end
 end
