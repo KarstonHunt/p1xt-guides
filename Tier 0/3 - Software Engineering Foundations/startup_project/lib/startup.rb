@@ -45,10 +45,9 @@ class Startup
   end
 
   def average_salary
-    salaries_total = 0
-    @employees.each do |employee|
+    salaries_total = @employees.inject(0) do |total, employee|
       salary = @salaries[employee.title]
-      salaries_total += salary
+      total + salary
     end
     salaries_total / @employees.length.to_f
   end
@@ -61,7 +60,7 @@ class Startup
   def acquire(other_startup)
     @funding += other_startup.funding
     @salaries = other_startup.salaries.merge(@salaries)
-    @employees = @employees.concat(other_startup.employees)
+    @employees = @employees += other_startup.employees
     other_startup.close
   end
 end
