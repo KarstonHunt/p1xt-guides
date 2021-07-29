@@ -92,9 +92,9 @@ Complete the [App Academy Open](https://open.appacademy.io/) free online Fullsta
 
 | Courses                                                                                                                                                               |   Status   |   Evidence   |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------: | :----------: |
-| Welcome To Coding                                                                                                                                                     |Done        |              |
-| Full Stack Online - Intro to Programming                                                                                                                              |Done        |              |
-| Full Stack Online - Software Engineering Foundations                                                                                                                  |In Progress |              |
+| Welcome To Coding                                                                                                                                                     |        |              |
+| Full Stack Online - Intro to Programming                                                                                                                              |        |              |
+| Full Stack Online - Software Engineering Foundations                                                                                                                  |  |              |
 | Full Stack Online - Ruby                                                                                                                                              |            |              |
 | Full Stack Online - SQL                                                                                                                                               |            |              |
 | Full Stack Online - Rails                                                                                                                                             |            |              |
